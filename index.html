@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <title>Desafio de Grid Layout</title>
+  </head>
+  <body>
+    <header class="menu">
+      <div class="menu__left">
+        <img
+          width="24"
+          height="24"
+          src="./src/assets/images/menu.png"
+          alt="Menu Icon"
+        />
+        <img
+          width="90"
+          height="20"
+          src="./src/assets/images/youtube-logo.png"
+          alt="Youtube Logo"
+        />
+      </div>
+      <div class="menu__search-box">
+        <input type="text" />
+        <button>
+          <img
+            width="16"
+            height="16"
+            src="./src/assets/images/search.png"
+            alt="Search Button"
+          />
+        </button>
+      </div>
+      <div class="menu__right">
+        <img
+          width="24"
+          height="24"
+          src="./src/assets/images/video.png"
+          alt="Video Icon"
+        />
+        <img
+          width="24"
+          height="24"
+          src="./src/assets/images/bell.png"
+          alt="Bell Icon"
+        />
+        <img
+          id="profile-icon"
+          width="34"
+          height="34"
+          src="./src/assets/images/profile-avatar.png"
+          alt="Profile Icon"
+        />
+      </div>
+    </header>
+    <aside class="sidebar">
+      <div class="side__item">
+        <img
+          width="24"
+          height="24"
+          src="./src/assets/images/home.png"
+          alt="Home Icon"
+        />
+        <p style="font-weight: bold;">Início</p>
+      </div>
+      <div class="side__item">
+        <img
+          width="24"
+          height="24"
+          src="./src/assets/images/compass.png"
+          alt="Compass Icon"
+        />
+        <p>Explorar</p>
+      </div>
+      <div class="side__item">
+        <img
+          width="24"
+          height="24"
+          src="./src/assets/images/youtube.png"
+          alt="Subscriber Icon"
+        />
+        <p>Inscrições</p>
+      </div>
+      <div class="side__item">
+        <img
+          width="24"
+          height="24"
+          src="./src/assets/images/disc.png"
+          alt="Disc Icon"
+        />
+        <p>Youtube Music</p>
+      </div>
+      <div class="side__item">
+        <img
+          width="24"
+          height="24"
+          src="./src/assets/images/like.png"
+          alt="Like Icon"
+        />
+        <p>Vídeos que gostei</p>
+      </div>
+      <div class="side__item">
+        <img
+          width="24"
+          height="24"
+          src="./src/assets/images/clock.png"
+          alt="Clock Icon"
+        />
+        <p>Assistir mais tarde</p>
+      </div>
+      <div class="side__item">
+        <img
+          width="24"
+          height="24"
+          src="./src/assets/images/download.png"
+          alt="Download Icon"
+        />
+        <p>Downloads</p>
+      </div>
+      <div class="side__item">
+        <img
+          width="24"
+          height="24"
+          src="./src/assets/images/film.png"
+          alt="Film Icon"
+        />
+        <p>Filmes</p>
+      </div>
+      <div class="side__item">
+        <img
+          width="24"
+          height="24"
+          src="./src/assets/images/book.png"
+          alt="Book Icon"
+        />
+        <p>Aprender</p>
+      </div>
+      <div class="side__item">
+        <img
+          width="24"
+          height="24"
+          src="./src/assets/images/award.png"
+          alt="Award Icon"
+        />
+        <p>Esportes</p>
+      </div>
+    </aside>
+    <main class="grid__videos">
+      <div class="video__item">
+        <img
+          width="250"
+          height="140"
+          src="./src/assets/images/thumbs/thumb-1.png"
+          alt="Thumbnail Image"
+        />
+        <div class="video__item-details">
+          <div class="video__channel-logo">
+            <img
+              width="42"
+              height="42"
+              src="./src/assets/images/channel-avatar.png"
+              alt="Channel Logo"
+            />
+          </div>
+          <div class="video__texts">
+            <a href="#" id="title">Geração Tech Unimed - BH - Ciência de Dados</a>
+            <p id="sub-title">
+              2,1 mil visualizações<br />Transmitido há 2 dias
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video__item">
+        <img
+          width="250"
+          height="140"
+          src="./src/assets/images/thumbs/thumb-2.png"
+          alt="Thumbnail Image"
+        />
+        <div class="video__item-details">
+          <div class="video__channel-logo">
+            <img
+              width="42"
+              height="42"
+              src="./src/assets/images/channel-avatar.png"
+              alt="Channel Logo"
+            />
+          </div>
+          <div class="video__texts">
+            <a href="#" id="title">Scrum Talks</a>
+            <p id="sub-title">
+              1,6 mil visualizações<br />Transmitido há 3 dias
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video__item">
+        <img
+          width="250"
+          height="140"
+          src="./src/assets/images/thumbs/thumb-3.png"
+          alt="Thumbnail Image"
+        />
+        <div class="video__item-details">
+          <div class="video__channel-logo">
+            <img
+              width="42"
+              height="42"
+              src="./src/assets/images/channel-avatar.png"
+              alt="Channel Logo"
+            />
+          </div>
+          <div class="video__texts">
+            <a href="#" id="title">Machine Learning Avançado - Fast Track</a>
+            <p id="sub-title">
+              1,7 mil visualizações<br />Transmitido há 4 dias
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video__item">
+        <img
+          width="250"
+          height="140"
+          src="./src/assets/images/thumbs/thumb-4.png"
+          alt="Thumbnail Image"
+        />
+        <div class="video__item-details">
+          <div class="video__channel-logo">
+            <img
+              width="42"
+              height="42"
+              src="./src/assets/images/channel-avatar.png"
+              alt="Channel Logo"
+            />
+          </div>
+          <div class="video__texts">
+            <a href="#" id="title">Global Skills #2 - Project Planning</a>
+            <p id="sub-title">
+              2,1 mil visualizações<br />Transmitido há 2 dias
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video__item">
+        <img
+          width="250"
+          height="140"
+          src="./src/assets/images/thumbs/thumb-5.png"
+          alt="Thumbnail Image"
+        />
+        <div class="video__item-details">
+          <div class="video__channel-logo">
+            <img
+              width="42"
+              height="42"
+              src="./src/assets/images/channel-avatar.png"
+              alt="Channel Logo"
+            />
+          </div>
+          <div class="video__texts">
+            <a href="#" id="title">Como aprender a programar em Python do Zero</a>
+            <p id="sub-title">
+              711 visualizações<br />Transmitido há 2 dias
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video__item">
+        <img
+          width="250"
+          height="140"
+          src="./src/assets/images/thumbs/thumb-1.png"
+          alt="Thumbnail Image"
+        />
+        <div class="video__item-details">
+          <div class="video__channel-logo">
+            <img
+              width="42"
+              height="42"
+              src="./src/assets/images/channel-avatar.png"
+              alt="Channel Logo"
+            />
+          </div>
+          <div class="video__texts">
+            <a href="#" id="title">Geração Tech Unimed - BH - Ciência de Dados</a>
+            <p id="sub-title">
+              2,1 mil visualizações<br />Transmitido há 2 dias
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video__item">
+        <img
+          width="250"
+          height="140"
+          src="./src/assets/images/thumbs/thumb-2.png"
+          alt="Thumbnail Image"
+        />
+        <div class="video__item-details">
+          <div class="video__channel-logo">
+            <img
+              width="42"
+              height="42"
+              src="./src/assets/images/channel-avatar.png"
+              alt="Channel Logo"
+            />
+          </div>
+          <div class="video__texts">
+            <a href="#" id="title">Scrum Talks</a>
+            <p id="sub-title">
+              1,6 mil visualizações<br />Transmitido há 3 dias
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video__item">
+        <img
+          width="250"
+          height="140"
+          src="./src/assets/images/thumbs/thumb-3.png"
+          alt="Thumbnail Image"
+        />
+        <div class="video__item-details">
+          <div class="video__channel-logo">
+            <img
+              width="42"
+              height="42"
+              src="./src/assets/images/channel-avatar.png"
+              alt="Channel Logo"
+            />
+          </div>
+          <div class="video__texts">
+            <a href="#" id="title">Machine Learning Avançado - Fast Track</a>
+            <p id="sub-title">
+              1,7 mil visualizações<br />Transmitido há 4 dias
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video__item">
+        <img
+          width="250"
+          height="140"
+          src="./src/assets/images/thumbs/thumb-4.png"
+          alt="Thumbnail Image"
+        />
+        <div class="video__item-details">
+          <div class="video__channel-logo">
+            <img
+              width="42"
+              height="42"
+              src="./src/assets/images/channel-avatar.png"
+              alt="Channel Logo"
+            />
+          </div>
+          <div class="video__texts">
+            <a href="#" id="title">Global Skills #2 - Project Planning</a>
+            <p id="sub-title">
+              2,1 mil visualizações<br />Transmitido há 2 dias
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video__item">
+        <img
+          width="250"
+          height="140"
+          src="./src/assets/images/thumbs/thumb-5.png"
+          alt="Thumbnail Image"
+        />
+        <div class="video__item-details">
+          <div class="video__channel-logo">
+            <img
+              width="42"
+              height="42"
+              src="./src/assets/images/channel-avatar.png"
+              alt="Channel Logo"
+            />
+          </div>
+          <div class="video__texts">
+            <a href="#" id="title">Como aprender a programar em Python do Zero</a>
+            <p id="sub-title">
+              711 visualizações<br />Transmitido há 2 dias
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video__item">
+        <img
+          width="250"
+          height="140"
+          src="./src/assets/images/thumbs/thumb-1.png"
+          alt="Thumbnail Image"
+        />
+        <div class="video__item-details">
+          <div class="video__channel-logo">
+            <img
+              width="42"
+              height="42"
+              src="./src/assets/images/channel-avatar.png"
+              alt="Channel Logo"
+            />
+          </div>
+          <div class="video__texts">
+            <a href="#"id="title">Geração Tech Unimed - BH - Ciência de Dados</a>
+            <p id="sub-title">
+              2,1 mil visualizações<br />Transmitido há 2 dias
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video__item">
+        <img
+          width="250"
+          height="140"
+          src="./src/assets/images/thumbs/thumb-2.png"
+          alt="Thumbnail Image"
+        />
+        <div class="video__item-details">
+          <div class="video__channel-logo">
+            <img
+              width="42"
+              height="42"
+              src="./src/assets/images/channel-avatar.png"
+              alt="Channel Logo"
+            />
+          </div>
+          <div class="video__texts">
+            <a href="#" id="title">Scrum Talks</a>
+            <p id="sub-title">
+              1,6 mil visualizações<br />Transmitido há 3 dias
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

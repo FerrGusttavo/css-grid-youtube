@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template:
+  "header header header header header"
+  "aside main main main main"
+  "aside main main main main" 
+  "aside main main main main"
+  ;
+  grid-template-columns: 218px repeat(4, 1fr);
+  grid-template-rows: 56px repeat(3, 262px);
+  background: #F9F9F9;
+}
+
+.menu {
+  height: 56px;
+  display: inline-flex;
+  grid-area: header;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 0 24px;
+  background: #FFFFFF;
+}
+
+.menu__left {
+  display: inline-flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.menu__search-box {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid  #CCCCCC;
+}
+
+.menu__search-box input {
+  font-size: 1.2rem;
+  width: 368px;
+  height: 40px;
+  border: none;
+  padding-left: 10px;
+}
+
+.menu__search-box button {
+  width: 57px;
+  height: 40px;
+  background: #F8F8F8;
+  border: none;
+  cursor: pointer;
+}
+
+.menu__right {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.menu__right #profile-icon {
+  border-radius: 50%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  grid-area: aside;
+  gap: 22px;
+  background: #FFFFFF;
+}
+
+.sidebar .side__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.grid__videos {
+  display: grid;
+  place-items: center center;
+  grid-area: main;
+  grid-template-columns: repeat(4, 282fr);
+  grid-template-rows: repeat(3, 262px);
+}
+
+.video__item {
+  width: 282px;
+  height: 262px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+}
+
+.video__item-details {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.video__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.video__texts #title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.video__texts #sub-title {
+  color: rgb(0, 0, 0, .7);
+  font-size: 0.7rem;
+}
+
